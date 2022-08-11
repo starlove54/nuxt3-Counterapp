@@ -21,9 +21,9 @@ function alertCounter() {
     <h2>Counter app </h2>
   </div>
   <div class="btn">
-    <button @click="incrementCounter"   class='increment' type="submit">Increment</button>
-    <button @click="alertCounter" class='alert' type="submit">Alert</button>
-    <button @click="decrementCounter" class='decrement' type="submit">Decrement</button>
+    <button @click="incrementCounter"   class='increment' type="submit">+1</button>
+    <button @click="alertCounter" class='alert' type="submit">say 1</button>
+    <button @click="decrementCounter" class='decrement' type="submit">-1</button>
   </div>
 
   <div class='display'>
