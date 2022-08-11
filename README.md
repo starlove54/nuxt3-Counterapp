@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
@@ -40,3 +41,7 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+=======
+# nuxt3-Counterapp
+Nuxt3.js counter application.
+>>>>>>> 16f25cabb6400207008e2d1ce0580f9a44be27ba
