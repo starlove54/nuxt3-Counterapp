@@ -1,38 +1,51 @@
-<script setup>
-
-let number= 0;
-
-function incrementCounter() {
- document.querySelector('.number').innerHTML = ++number;
-}
-
-function decrementCounter() {
- document.querySelector('.number').innerHTML = --number;
-}
-    
-function alertCounter() {
-  console.log(alert(`the number is ${number}`))
-}
-
-</script>
-
 <template>
+
+<div id="app">
+
   <div class="heading">
     <h2>Counter app </h2>
   </div>
+
   <div class="btn">
-    <button @click="incrementCounter"   class='increment' type="submit">+1</button>
-    <button @click="alertCounter" class='alert' type="submit">say 1</button>
-    <button @click="decrementCounter" class='decrement' type="submit">-1</button>
+    <button @click="increment">+1</button>
+    <button @click="alertCounter" >say 1</button>
+    <button @click="decrement" >-1</button>
   </div>
 
-  <div class='display'>
-    <h1 class="number">{{number}}</h1>
+ <div class='display'>
+    <h1 class="number">Count is {{count}}</h1>
+  </div>
+
   </div>
 
 </template>
 
 
+<script  setup>
+import { ref } from 'vue'
+
+// reactive state
+const count = ref(0)
+
+// functions that mutate state and trigger updates
+function increment() {
+  count.value++;
+}
+
+function alertCounter() {
+   alert(`Count is ${count.value}`);
+}
+
+function decrement() {
+  count.value--;
+}
+
+
+</script>
+
+
+
+ 
 
 <style>
 
