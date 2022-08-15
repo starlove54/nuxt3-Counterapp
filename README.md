@@ -1,4 +1,4 @@
-# A nuxtcounter application 
+# A nuxt3 counter application 
 
 
 
