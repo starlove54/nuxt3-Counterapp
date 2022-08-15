@@ -1,3 +1,6 @@
+# A nuxtcounter application 
+
+
 
 # Nuxt 3 Minimal Starter
 
